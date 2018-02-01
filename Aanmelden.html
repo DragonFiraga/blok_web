@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aanmelden</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!--   Aangezien de 3 links in de bovenste header voor navigatie gebruikt worden worden alle links in het nav element gezet. Vanuit de eerst nav maakt het gebruik van meerdere genest navs en daarin kan weer een geneste nav voorkomen  -->
+        <nav>
+            <nav class="navigationMenuLeft">
+                <!--     H1 staat voor de link van het navigatiemenu, de belangrijkste header voor de gehele website -->
+                <!--    Img staat hierbij omdat dit deel van de heading is -->
+<!--
+                Navigatiemenu
+                <img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+<!--
+Menuvinkje is bij de verhalenwebsite overbodig, omdat er maar 1 pagina voor elke link is
+<img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+ <!--        ol wordt hier gebruikt omdat het menu een structuur heeft en het onlogisch zou zijn om sommige menu items onderaan te plaatsen-->
+                
+                    <ol>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Overzichtpagina.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ol>
+                
+            </nav>
+
+
+            <nav class="hamburgerMenu">
+                <img src="images/Symbolen/HamburgerTransavia.png" alt="Navigatiemenu">
+                
+                <nav class="popUp">
+                    <ol>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Overzichtpagina.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                        <li><a href="Inloggen.html">Inloggen</a></li>
+                    </ol>
+                </nav>
+            </nav>
+
+
+            <a href="Home.html">
+     <img src="images/TransaviaLogo.png" alt="Transavia-logo">
+     </a>
+
+             <a href="Inloggen.html" class="back">
+     Terug
+      </a>
+
+
+        </nav>
+
+
+        <h1>Aanmelden</h1>
+
+    </header>
+    
+    
+    <form action="Overzichtpagina-Aangemeld.html">
+        <fieldset>
+            <!--  Hier komt nog iets voor bij de javascript-->
+            <legend>Persoonlijke gegevens</legend>
+            <!--   Hier gebruik ik een small omdat de uitleg van het * kort uitgelegd moet worden-->
+            <small>* = Verplichte velden</small>
+
+            <label for="firstName">Voornaam<em>*</em></label>
+            <input type="text" required id="firstName">
+
+            <label for="lastName">Achternaam</label>
+            <input type="text" id="lastName">
+
+
+            <label>Geslacht</label>
+
+            <label for="genderMale">
+    <input type="radio" value="Man" name="gender" id="genderMale"> 
+    Man
+    </label>
+
+            <label for="genderFemale">
+    <input type="radio" value="Vrouw" name="gender" id="genderFemale"> 
+    Vrouw
+    </label>
+
+            <label for="genderTrans">
+    <input type="radio" value="Genderless" name="gender" id="genderTrans"> 
+    Geheim
+    </label>
+
+            <label for="birthDate">Geboortedatum *</label>
+            <input type="date" required id="birthDate" min="1900-01-01">
+
+            <label for="phoneNumber">Mobiele nummer *</label>
+            <input type="tel" required minlength="10" maxlength="14" id="phoneNumber">
+
+            <!-- De naam van het land staat meestal al vast, hierom kunnen keuzes aan de gebruiker worden gegeven voor zijn land zonder risico van een typfout. Om deze reden wordt hier gebruik gemaakt van select en options-->
+
+            <label for="country">Land *</label>
+            <select name="country" required id="country">
+                <option value="" disabled selected>-- Kies een Land --</option>
+                <option value="nederland">Nederland</option>
+                <option value="engeland">UK</option>
+                <option value="amerika">USA</option>
+            </select>
+
+        </fieldset>
+
+        <!--    Ik heb voor 2 fieldset gekozen om het maken van een account te scheiden tussen gegevens van de persoon zelf en gegevens die de gebruiker nodig heeft voor het inloggen-->
+
+        <fieldset>
+
+            <legend>Inloggegevens</legend>
+
+
+            <label for="e-mail">E-mail * </label>
+            <input type="email" required placeholder="example@gmail.com" id="e-mail">
+            <p>E=mail = bevat @ en .nl/.com, Gebruikersnaam</p>
+
+            <label for="userName">Gebruikersnaam</label>
+            <input type="text" id="userName">
+
+            <label for="passWord">Wachtwoord * </label>
+            <input type="password" required id="passWord" minlength="5">
+            <p>Dit wachtwoord moet minimaal uit 5 letters bestaan.</p>
+
+            <label for="passWordRepeat">Herhaal wachtwoord * </label>
+            <input type="password" required id="passWordRepeat" minlength="5">
+
+            <input type="submit" value="Account aanmaken" name="Submit" id="buttonAccount" class="buttonBlue">
+            <!--  Element button wordt hier gebruikt omdat het maken van een account via een knop gaat, later wil ik nog via :disable de knop alleen werkzaam maken wanneer alle input velden zijn ingevuld-->
+            <p>Uw gegevens zijn goedgekeurd!</p>
+
+        </fieldset>
+    </form>
+
+    <!--     <footer>Prototype</footer>-->
+
+    <script src="js/VerhalenSite.js"></script>
+</body>
+</html>

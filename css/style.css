@@ -1,0 +1,1279 @@
+/* Keyframes Regel 1-237 */
+
+@keyframes fadeIn {            /* Animatie voor de nieuwe comment die verschijnt bij microinteractie feedback*/
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.FADEIN {
+    animation-duration: 1s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeOut {            /* Animaties die gebruikt worden voor microinteractie suitcase op de home pagina's*/
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.FADEOUT {
+    animation-duration: 1s;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeInTop1 {        /* Animatie voor het filter scherm die op de overzichtpagina's verschijnt */
+    from {
+        opacity: 0;
+        transform: translateY(-2%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.FADEINTOP1 {
+    animation-duration: 1s;
+    animation-name: fadeInTop1;
+}
+
+@keyframes slideInTop2 {        /* Animatie voor de comment die al bij gestuurde feedback staat */
+    from {
+        opacity: 0;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(5%);
+    }
+}
+
+@keyframes fadeOutRight {        /* Animatie gebruikt voor het eerste formulier dat verdwijnt op de feedback pagina */
+    from {
+        opacity: 1;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.FADEOUTRIGHT {
+    animation-duration: 2s;
+    animation-name: fadeOutRight;
+}
+
+@keyframes moveDown {            /* MoveDown animatie brengt de al geplaatste comment naar beneden*/
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translateY(88%);
+    }
+}
+
+.MOVEDOWN {
+    animation-duration: 2s;
+    animation-name: moveDown;
+}
+
+@keyframes moveUp {            /* MoveUp voor de microinteractie airplane, op de overzichtspagina */
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translateY(-650%);
+    }
+}
+
+.MOVEUP {
+    animation-duration: 2s;
+    animation-name: moveUp;
+}
+
+@keyframes sportLeft {           /* Animaties om de tekst bij sportcommentaar te laten verschijnen */
+    from {
+        opacity: 0;
+        transform: translate(-50%, 100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.SPORTLEFT {
+    animation-duration: 0.5s;
+    animation-name: sportLeft;
+}
+
+@keyframes sportRight {
+    from {
+        opacity: 0;
+        transform: translate(50%, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.SPORTRIGHT {
+    animation-duration: 0.5s;
+    animation-name: sportRight;
+}
+
+@keyframes sportAbove {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.SPORTABOVE {
+    animation-duration: 0.5s;
+    animation-name: sportAbove;
+}
+
+@keyframes sportDown {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.SPORTDOWN {
+    animation-duration: 0.5s;
+    animation-name: sportDown;
+}
+
+@keyframes sportLeftAbove {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.SPORTLEFTABOVE {
+    animation-duration: 0.5s;
+    animation-name: sportLeftAbove;
+}
+
+@keyframes sportRightDown {
+    from {
+        opacity: 0;
+        transform: translate(50%, 50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.SPORTRIGHTDOWN {
+    animation-duration: 0.5s;
+    animation-name: sportRightDown;
+}
+
+@keyframes beamGo {                /* Animatie voor de blauwe straal die bij sportcommentaar van link naar rechts gaat*/
+    from{
+        transform: translate(-1em, 10em);
+    }
+    
+    to{
+        transform: translate(100em, 10em);
+    }
+}
+
+@keyframes confettiPopDown {        /* Animaties gebruikt voor de confetti in verhaal verrassing */
+    from {
+        opacity: 0;
+        transform: translate(2%, -60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.CONFETTIPOPDOWN {
+    animation-duration: 1.5s;
+    animation-name: confettiPopDown;
+}
+
+@keyframes confettiPopUp {
+    from {
+        opacity: 0;
+        transform: translate(-2%, 60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.CONFETTIPOPUP {
+    animation-duration: 1.5s;
+    animation-name: confettiPopUp;
+}
+
+/* Bij veel elementen was er sprake van display:none; en display: block. Om deze reden heb ik deze twee waarden ieder een eigen plekje gegeven en stop ik elk element, class of id erbij die van deze display's gebruik wil maken.*/
+
+.hide,
+a.backStory,
+button.searchMobileButton,
+input + p,
+input[type="submit"] + p,
+input[type="submit"]:hover + p,
+nav > button.filterButton,
+nav.popUp,
+#readAgainButton {
+    display: none;
+}
+
+.show,
+input:hover + p,
+fieldset:valid > p:last-of-type,
+nav.hamburgerMenu,
+nav.hamburgerMenu:hover > nav.popUp,
+nav.loggedIN:hover > nav.popUp,
+label,
+strong,
+i {
+    display: block;
+}
+
+/* Code op elementen en validation states*/
+a {
+    text-decoration: none;
+}
+
+a.logIN,
+a.back,
+a.backStory {
+    font-size: 1em;
+    margin: 0.8em 1em 0 0;
+}
+
+a > small {
+    color: #1c016c;
+    display: block;
+    margin-top: 1em;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+article {
+    margin: 0 1em 1.6em 1em;
+    position: relative;
+}
+
+aside {
+    background: white;
+    color: black;
+    padding: 0.8em 0 0.4em 0;
+    text-align: center;
+}
+
+aside > form {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+aside > input {
+    border: 0.1em solid #91A3B7;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0.3em;
+}
+
+aside > input:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+}
+
+aside > input:nth-child(3) {
+    background-color: #99deff;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: white;
+    font-weight: 700;
+    margin-left: -0.3em;
+}
+
+body {
+    background-color: #f3e5d8;
+    font-family: Nexa;
+    margin: 0;
+}
+
+/* Input en button */
+
+.buttonBlue {
+    background-color: #28009f;
+    box-shadow: 0 0.15em #1c016c;
+    border-radius: 1.25em;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 1em;
+    padding: 0.4em 1.5em 0.6em 1.5em;
+    text-align: center;
+}
+
+.buttonBlue:focus:active {
+    background-color: #1c016c;
+    margin-top: 1.2em;
+    box-shadow: none;
+}
+
+/*Ik moet met de filterknop bij de img kunnen, vandaar dat ik een class gebruik in plaats van de selector aside > button:nth-first-child*/
+
+button.filterButton {
+    background-color: #ff3368;
+    box-shadow: 0 0.10em #cd2c56;
+    border: 0.15em solid #cd2c56;
+    border-radius: 0.5em;
+    margin-right: 1em;
+}
+
+button.filterButton > img {
+    height: 1.25em;
+    margin-top: 0.4em;
+}
+
+button.filterButton:active,
+nav.mobileFiltSearch > button:last-of-type:active {
+    margin-top: 0.10em;
+    box-shadow: none;
+}
+
+dd {
+    color: black;
+    display: inline-block;
+    margin-left: 0.5em;
+    position: relative;
+    bottom: 0.3em;
+    text-align: left;
+    width: 6em;
+}
+
+div {
+    background-color: rgba(220, 220, 220, 0.8);
+    border-bottom-left-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
+    margin: 0;
+    padding: 0.2em;
+    position: absolute;
+    text-align: center;
+    top: 9.6em;
+    width: 19.4em;
+}
+
+dl,
+dt {
+    display: inline-block;
+    margin: 0.1em 0 0 0.5em;
+}
+
+dt > img {
+    height: 1.6em;
+    margin-left: 0;
+}
+
+fieldset,
+section {
+    background-color: #fbf7f3;
+    border: 0.02em solid white;
+    border-radius: 0.5em;
+    margin: 0 0 1em 2em;
+    padding: 0.5em 1em 1em 1em;
+    width: 13em;
+}
+
+fieldset:valid {
+    background-color: lightgreen;
+    transition: 0.6s;
+}
+
+fieldset:valid > label {
+    color: black;
+    transition: 0.6s;
+}
+
+fieldset.filterScreen {
+    background-color: white;
+    border: 0.0625em solid #cccccc;
+    width: 15em;
+    margin: 1em;
+    padding: 0.5em 0.5em 1em 0.5em;
+    text-align: left;
+}
+
+fieldset.filterScreen > label {
+    font-weight: 100;
+}
+
+fieldset.filterScreen:valid,
+section.feedbackForm2:valid {
+    background-color: white;
+}
+
+fieldset.filterScreen:first-of-type > label:nth-of-type(n+1):nth-of-type(-n+3),
+fieldset.filterScreen:last-of-type > label:nth-of-type(3n+1) {
+    display: block;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-left: 0.2em;
+}
+
+fieldset.filterScreen:first-of-type > label:nth-of-type(n+4):nth-of-type(-n+9) {
+    display: inline-block;
+    margin: 0;
+    width: 48%;
+}
+
+fieldset.filterScreen:last-of-type > label {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+fieldset:valid > p:last-of-type {
+    background-color: lightgreen;
+    color: white;
+    margin-left: 6%;
+    margin-top: 6%;
+    transition: 0.6s;
+}
+
+fieldset > input,
+textarea,
+select,
+section.feedbackForm2 > p {
+    width: 96%;
+}
+
+fieldset > input[type='submit'],
+input[type='button'],
+section > button.buttonBlue,
+select {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    color: #0ed173;
+    font-size: 3.4em;
+    margin: 0.2em 0.1em 0.2em 0.1em;
+    text-align: center;
+}
+
+h3,
+marquee {
+    color: black;
+    font-size: 1.25em;
+    margin: 0.25em 0.5em 0 0.5em;
+    overflow: hidden;
+    font-weight: 700;
+    text-overflow: ellipsis;                /*https://www.w3schools.com/cssref/css3_pr_text-overflow.asp*/
+    white-space: nowrap;                    /*https://www.w3schools.com/cssref/pr_text_white-space.asp*/
+}
+
+header {
+    z-index: 1;
+}
+
+header > nav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+select,
+textarea {
+    border: 0.05em solid #91A3B7;
+    border-radius: 0.5em;
+    font-size: 1em;
+    padding: 0.3em;
+}
+
+input[type="email"]:valid,
+input[type="password"]:valid,
+input[type="tel"]:valid,
+input[type="date"]:valid,
+input[id="firstName"]:valid,
+select[name="country"]:valid {
+    background-color: white;
+    border: 0.10em solid green;
+}
+
+input[type="email"]:focus:invalid,
+input[type="password"]:focus:invalid,
+input[type="tel"]:focus:invalid,
+input[type="date"]:focus:invalid,
+select[name="country"]:focus:invalid {
+    border: 0.15em solid red;
+}
+
+input + p {
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
+    font-size: 0.6em;
+    padding: 1em;
+    margin: 0;
+}
+
+input:hover + p {
+    display: block;
+    position: absolute;
+    width: 15em;
+}
+
+input[type="submit"] + p {
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0;
+    position: relative;
+}
+
+input[type='range'] {
+    display: inline-block;
+    outline: none;
+    width: 70%;
+}
+
+input[type='range'] + em {
+    font-size: 0.8em;
+    font-style: normal;
+    margin-left: 0.5em;
+    position: relative;
+    bottom: 1em;
+}
+
+input[type='checkbox'] {
+    margin-top: 0.5em;
+    margin-right: 0.6em;
+}
+
+img[alt="Transavia-logo"] {
+    position: absolute;
+    left: calc(50% - 80px);
+    margin-top: 0.5em;
+    width: 10em;
+}
+
+img.storyPicture {
+    border-radius: 0.75em;
+    box-shadow: 0 0.3em 0.5em black;
+    height: 14em;
+}
+
+label {
+    color: #0ed173;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    margin-top: 1em;
+}
+
+label:hover,
+label:active {
+    color: #02c25d;
+}
+
+label[for="genderMale"],
+label[for="genderFemale"],
+label[for="genderTrans"] {
+    color: black;
+    font-weight: 100;
+    margin-top: 0.2em;
+}
+/* Hier gebruik ik float om de titels van de content in de form en sections te krijgen. */
+legend,
+section > h2 {
+    color: black;
+    float: left;
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    width: 100%;
+}
+
+li > a {
+    color: #0ed173;
+    font-size: 1em;
+    margin: 0 0.8em 0 0.8em;
+    text-align: left;
+}
+
+
+li:hover > a {
+    color: #28009f;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+li > a:active {
+    color: #1c016c;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5em 1em 0 1em;
+}
+
+nav.hamburgerMenu > img {
+    margin: 0.65em 0 0.5em 0.7em;
+    width: 2.5em;
+}
+
+nav.hamburgerMenu:hover > nav.popUp {
+    border-bottom-right-radius: 0.75em;
+    margin-top: -0.1em;
+    position: absolute;
+    z-index: 2;
+}
+
+nav.hamburgerMenu nav.popUp ol {
+    border-bottom-right-radius: 0.75em;
+    border-left: none;
+}
+/* De mobiele zoekknop en filterknop delen een hele boel styling attributen, alleen zijn sommige gedeeltes zoals de keur anders en de grote van de img in de button*/
+nav.mobileFiltSearch > button:last-of-type {
+    background: #99deff;
+    border: 0.15em solid #91A3B7;
+    border-radius: 0.5em;
+    box-shadow: 0 0.10em #91A3B7;
+    height: 2.35em;
+}
+
+nav > nav.mobileFiltSearch {
+    margin-top: 0.45em;
+    margin-right: 0.35em;
+}
+
+nav.mobileFiltSearch button:last-of-type img {
+    height: 1.5em;
+    margin-top: 0.15em;
+}
+
+nav.mobileFiltSearch > button.filterButton,
+nav.mobileFiltSearch > button.searchMobileButton {
+    height: 2.3em;
+    padding: 0;
+    width: 2.3em;
+}
+/* Voor zoekknop is er geen class, omdat er maar 1 button is die deze code nodig heeft*/
+nav.loggedIN nav.popUp ol {
+    border-bottom-left-radius: 0.75em;
+    border-right: none;
+}
+
+nav.navigationMenuLeft {
+    margin: 0.8em 0 1em 0.5em;
+}
+
+nav.popUp > ol {
+    background-color: white;
+    border: 0.1em solid #0ed173;
+    border-top: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 1em;
+    z-index: 1;
+}
+
+nav.popUp ol li:nth-of-type(5) {
+    border-top: 0.01em solid #0ed173;
+    margin-top: 0.2em;
+    padding-top: 0.4em;
+}
+/* Niet dezelfde margin afstand als het hamburger menu anders moet je heel geforceerd het hover menu bereiken */
+nav.loggedIN > img {
+    height: 1.77em;
+    margin: 0.6em 2em 0 0;
+}
+
+nav.loggedIN:hover > nav.popUp {
+    border-bottom-left-radius: 0.75em;
+    position: absolute;
+    margin-top: 0.31em;
+    right: -0.01em;
+}
+/* Mobile First, daarbij komt dus te kijken dat de waarden die veranderen via responsive design eerst worden aangegeven hier. De waarden voor tablet en desktop staan in de media queries onderaan */
+ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+ol > li:active {
+    margin: 0.1em 0 -0.1em 0;
+    transition: 0.1s;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+small {
+    font-size: 0.7em;
+}
+
+section.feedbackForm2 > p {
+    border: 0.04em solid black;
+    border-radius: 0.75em;
+    margin-top: 3.5em;
+    font-size: 0.7em;
+    padding: 0.5em;
+}
+
+textarea {
+    overflow-y: hidden;
+}
+/* Om het navigatiemenu klikbaar over te laten komen maak ik hier gebruik van 3 states. De eerste 2 wijzen naar de tekst zelf, en de 3 verschuift de link iets naar onder om het gevoel van een knop na te boosten. */
+/*Verhalen*/
+
+body.bgStep1 > h4,                        /* Exclusief voor verhaal moe */
+body.bgStep2 > h4,
+body.bgStep3 > h4,
+body.bgStep4 > h4 {
+    color: white;
+    font-size: 3.38em;
+    position: relative;
+    left: 10%;
+    margin: 2em 0 0.5em 0;
+    transform: rotate(-1.5deg);
+    width: auto;
+}
+
+body.bgStep1 {
+    background: url(/images/MoeVoorbeeld.jpg);
+}
+
+body.bgStep2 {
+    background: url(/images/MoeVoorbeeld2.jpg);
+}
+
+body.bgStep3 {
+    background: url(/images/MoeVoorbeeld3.jpg);
+}
+
+body.bgStep4 {
+    background: url(/images/MoeVoorbeeld4.jpg);
+}
+
+body.bgStep1,
+body.bgStep2,
+body.bgStep3,
+body.bgStep4 {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body.bgStep2,
+body.bgStep3,
+body.bgStep4 {
+    transition: 1s ease-in 0.5s;
+}
+
+#textMoe {
+    background-color: gray;
+    border: 0.5em groove lightgray;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    left: 10%;
+    padding: 1em;
+    color: white;
+    transform: rotate(-1.5deg);
+    width: 60%;
+}
+
+#moeButton,
+#readAgainButton {
+    border: 0.5em groove white;
+    border-radius: 0.75em;
+    box-shadow: 0 0.18em darkgray;
+    font-size: 1.25em;
+    margin: 1.5em 20%;
+    transform: rotate(-1.5deg);
+}
+
+#moeButton:active,
+#readAgainButton:active {
+    box-shadow: none;
+    margin-top: 1.7em;
+}
+
+img.storyPicture:hover {
+    box-shadow: 0 0.5em 1em black;
+    margin-right: 0.08em;
+    transition: 0.1s;
+}
+
+img.storyPicture:active,
+img.storyPicture:active + div {
+    margin: 0.10em 0;
+    box-shadow: 0 0 0.5em black;
+    transition: 0.1s;
+}
+
+body.bgSportC {                    /* Exclusief voor verhaal sportcommentaar */
+    background-color: black;
+    overflow-x: hidden;
+}
+
+body.bgSportC > div.start {
+    background: #614054;
+    border-radius: 2em;
+    height: 0.5em;
+    position: fixed;
+    opacity: 0.8;
+    transform: translate(-120%);
+    width: 30em;
+    z-index: -1;
+}
+
+body.bgSportC > div.go{ /* Ik zet deze animatie er zo in, om ervaring op te doen op deze manier en gebruik maken van toggle in javascript.*/
+    animation-duration: 1s;
+    animation-name: beamGo;
+}
+
+body.bgSportC header h4 img {
+    width: 100%;
+}
+
+#textSportC {
+    background-color: #feeba1;
+    border: 0.1em solid black;
+    border-radius: 0.25em;
+    box-shadow: 0 1em 150em #feeba1;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    width: 35%;
+    z-index: 1;
+}
+
+#textSportC,
+#textSportC > strong,
+#textSportC > i {
+    display: inline-block;
+}
+
+p.textSportCStart {
+    margin-left: 24.5%;
+}
+
+#buttonSportCBack {
+    margin-left: 5.5%;
+}
+
+#readAgainButtonSport + p {
+    color: white;
+    text-align: center;
+}
+
+body.bgVerrassing {                    /* Exclusief voor verhaal Verrassing */
+    background-color: #ebbe57;
+}
+
+body.bgVerrassing header h4 img {
+    box-shadow: 0 0.5em 2em #c1963e;
+    margin-bottom: 2em;
+    position: relative;
+    left: 17%;
+    width: 65%;
+}
+
+button.confetti-Buis {
+    background: transparent;
+    border: none;
+}
+
+button.confetti-Buis > img {
+    width: 5.5em;
+}
+
+button.confetti-Buis:first-of-type,
+button.confetti-Buis:nth-of-type(3) {
+    margin-left: 50%;
+    transform: rotate(190deg);
+}
+
+button.confetti-Buis:nth-of-type(2),
+button.confetti-Buis:last-of-type {
+    margin: 5% 0 0 20%;
+    transform: rotate(10deg);
+}
+
+body.bgVerrassing > img:nth-of-type(4n+1),
+#readAgainButtonVerrassing {
+    transform: rotate(-6.5deg);
+}
+
+body.bgVerrassing > img:nth-of-type(3n+1) {
+    transform: rotate(10.5deg);
+}
+
+body.bgVerrassing > img {
+    box-shadow: 0.1em 2em 10em #c1963e;
+    border: 0.25em groove #ebbe57;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    width: 50%;
+}
+
+body.bgVerrassing > img:nth-of-type(even) {        /* Odd en even komen van https://css-tricks.com/useful-nth-child-recipies/ */
+    left: 44%;
+}
+
+ body.bgVerrassing > img:nth-of-type(odd) {
+    left: 5%;
+}
+
+#readAgainButtonVerrassing {
+    margin: 0 0 5% 60%;
+    font-size: 0.7em;
+}
+
+/* !Micro-interacties Job stories! */
+
+#buttonTop {                                    /* To-the-top-link: Overzichtpagina, Overzichtpagina-Aangemeld */
+    background-color: #0ed173;
+    background-image: url(/images/Plane.png);
+    background-size: 2em;
+    background-position: 0.85em 1.4em;
+    background-repeat: no-repeat;
+    box-shadow: 0 0.2em 0.05em #02c25d;
+    border: 0.15em solid #02c25d;
+    border-radius: 1.25em;
+    color: white;
+    font-weight: 700;
+    height: 4em;
+    opacity: 0.8;
+    overflow: visible;
+    position: fixed;
+    bottom: 1em;
+    right: 0.1em;
+    margin-right: 1em;
+    padding-top: 0em;
+    padding-bottom: 2em;
+    width: 4em;
+}
+
+#buttonTop:hover,
+#buttonTop:active {
+    background-color: #28009F;
+    border: 0.15em solid #1c016c;
+    box-shadow: 0 0.2em 0.05em #1c016c;
+}
+
+#buttonTop:active {
+    background-color: #1c016c;
+    bottom: 0.8em;
+    box-shadow: none;
+}
+
+#actualPlane {
+    display: block;
+    position: fixed;
+    bottom: -10em;
+    right: 1em;
+    height: 10em;
+    z-index: 1;
+}
+
+section.feedbackForm2 > p:first-of-type {        /* Comment-box: Feedback */
+    animation-duration: 1s;
+    animation-name: slideInTop2;
+}
+
+ul.suitCase {                                    /* Collapsible panels: Home, Home-Ingelogd */
+    background-color: rgba(255, 51, 104, 0.2);
+    border: 0.1em solid #cd2c56;
+    border-top: none;
+    border-radius: 0;
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 0;
+    height: 30em;
+    margin-left: 3.5%;
+    text-align: center;
+    width: 92%;
+    z-index: -1;
+}
+
+ul.suitCase > li {
+    display: inline-block;
+    margin: 0 0 0 -0.5em;
+}
+
+ul.suitCase > li:first-of-type {
+    margin-top: 3em;
+}
+
+h2 > button {
+    background: rgba(255, 51, 104, 0.2);
+    border-width: 0.1em;
+    border-color: #cd2c56;
+    border-radius: 0.5em 0.5em 0 0;
+    border-style: solid groove groove groove;
+    font-size: 0.8em;
+    font-weight: 100;
+    position: absolute;
+    margin-left: 3.5%;
+    top: 7.5em;
+    width: 92.8%;
+    z-index: 1;
+}
+
+button.suitCaseOpen {
+    background: rgba(255, 51, 104, 1);
+    border-radius: 0;
+    box-shadow: 0 0.1em 0.05em black;
+    transition: 0.8s;
+}
+
+button.suitCaseSide {
+    padding: 0.5em;
+    transition: 0.8s;
+}
+
+button.suitCase2 {
+    background: rgba(255, 51, 104, 0.8);
+    padding-top: 23.7em;
+    transition: 0.8s;
+}
+
+img.rotate {
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+
+h2 button img {
+    height: 0.6em;
+    transition: 1.5s;
+    z-index: 1;
+}
+
+li > article {
+    margin-top: 0.5em;
+}
+
+/*Media Queries*/
+
+@media (max-width: 45.27em) {        /*Phone*/
+
+    aside {
+        padding: 0;
+    }
+
+    a.backStory,
+    nav.hamburgerMenu {
+        display: block;
+    }
+
+    a.logIN,
+    aside > input:first-of-type,
+    aside > input:nth-child(3),
+    button.filterButton,
+    nav.navigationMenuLeft,
+    nav.loggedIN {
+        display: none;
+    }
+
+    nav.mobileFiltSearch > button.filterButton,
+    nav.mobileFiltSearch > button.searchMobileButton {
+        display: inline-block;
+    }
+
+    form > fieldset,
+    section {
+        margin-left: 1em;
+    }
+
+}
+
+@media (min-width: 45.27em) {      /*Tablet*/
+    
+    button.filterButton > img {
+        height: 1.6em;
+    }
+
+    div {
+        top: 9.6em;
+        width: 19.4em;
+    }
+
+    main {
+        margin-top: 2.5em;
+    }
+
+    h1 {
+        font-size: 5.5em;
+    }
+
+    h2 > button {
+        top: 10em;
+        margin-left: 10%;
+        width: 80.1%;
+    }
+
+    button.suitCase2 {
+        padding-top: 19.50em;
+        transition: 0.8s;
+    }
+    
+    nav.hamburgerMenu {
+        display: block;
+    }
+
+    nav.navigationMenuLeft,
+    nav.mobileFiltSearch,
+    li:nth-of-type(n+5):nth-of-type(-n+7) {  /* Om nu de account links te verbergen in het hamburger menu selecteer ik hier de 5de tot 7de li met twee nth-of type naast elkaar.*/              
+        display: none;                       /* De code rent tegen elkaar in wat de optelling bij elkaar stopt en zo een gebied pakt. De code heb ik gevonden op https://gist.github.com/rondevera/167627*/
+    }
+    
+    #actualPlane {
+        z-index: -1;
+    }
+
+    ul.suitCase {
+        overflow-y: scroll;
+        height: 25em;
+        margin-left: 10%;
+        width: 79.7%;
+    }
+
+    ul.suitCase > li {
+        margin: 2em 0 0 0;
+    }
+    
+    #textSportC {
+        width: 40%;
+    }
+    
+    p.textSportCStart {                            /*    Sportcommentaar  */
+        margin-left: 29.5%;
+    }
+
+    #buttonSportCBack {
+        margin-left: 18%;
+    }
+
+    #readAgainButtonSport,
+    #buttonSportCNext,
+    #readAgainButtonSport {
+        margin: 0.5em 0.2em 0.2em 0.2em;
+    }
+
+    #buttonSportCBack {
+        margin-left: 18%;
+    }
+/*    Verrassing */
+        body.bgVerrassing > img{
+        width: 35%;
+    }
+    
+        button.confetti-Buis > img {
+        width: 12em;
+    }
+    
+    body.bgVerrassing > img:nth-of-type(odd) {
+    left: 15%;
+}
+    body.bgVerrassing > img:nth-of-type(even) {
+    left: 50%;
+    }
+
+}
+
+@media (min-width: 58.25em) {        /*Overgang verhalen overzichtpagina*/
+
+    div {
+        top: 13.65em;
+        width: 25.07em;
+    }
+
+    img.storyPicture {
+        height: 18em;
+    }
+
+}
+
+@media (min-width: 64em) {            /*Desktop*/
+
+    a.logIN,
+    a.back,
+    a.backStory {
+        font-size: 1em;
+        margin: 0.8em 1.8em 0 0;
+    }
+
+    nav:nth-of-type(2) {
+        display: none;
+    }
+
+    nav.navigationMenuLeft {
+        display: block;
+    }
+
+    #buttonSportCBack {
+        margin-left: 24%;
+    }
+
+}

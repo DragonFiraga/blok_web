@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verhaal #61: Sportcommentaar</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="bgSportC">
+
+    <!--   Aangezien de 3 links in de bovenste header voor navigatie gebruikt worden worden alle links in het nav element gezet -->
+    <header>
+        <!--   Aangezien de 3 links in de bovenste header voor navigatie gebruikt worden worden alle links in het nav element gezet. Vanuit de eerst nav maakt het gebruik van meerdere genest navs en daarin kan weer een geneste nav voorkomen  -->
+        <nav>
+            <nav class="navigationMenuLeft">
+                <!--     H1 staat voor de link van het navigatiemenu, de belangrijkste header voor de gehele website -->
+                <!--    Img staat hierbij omdat dit deel van de heading is -->
+                <!--
+                Navigatiemenu
+                <img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+                <!--
+Menuvinkje is bij de verhalenwebsite overbodig, omdat er maar 1 pagina voor elke link is
+<img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+                <!--        ol wordt hier gebruikt omdat het menu een structuur heeft en het onlogisch zou zijn om sommige menu items onderaan te plaatsen-->
+
+                <ol>
+                    <li><a href="/Home.html">Home</a></li>
+                    <li><a href="/Overzichtpagina.html">Verhalen</a></li>
+                    <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                    <li><a href="/Feedback.html">Feedback</a></li>
+                </ol>
+
+            </nav>
+
+
+            <nav class="hamburgerMenu">
+                <img src="/images/Symbolen/HamburgerTransavia.png" alt="Navigatiemenu">
+
+                <nav class="popUp">
+                    <ol>
+                        <li><a href="/Home-Ingelogd.html">Home</a></li>
+                        <li><a href="/Overzichtpagina-Aangemeld.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="/Feedback.html">Feedback</a></li>
+                        <li><a href="/MijnAccount.html">Mijn account</a></li>
+                        <li><a href="/Favorieten.html">Favorieten</a></li>
+                        <li><a href="/Overzichtpagina.html">Uitloggen</a></li>
+                    </ol>
+                </nav>
+            </nav>
+
+
+            <a href="/Home-Ingelogd.html">
+     <img src="/images/TransaviaLogo.png" alt="Transavia-logo">
+     </a>
+
+            <nav class="loggedIN">
+                <img src="/images/Symbolen/ProfielPhotoshopIngekleurd.png" alt="Account-ingelogd-symbool">
+                <!--     De gebruikersnaam will ik onder het account plaatje zien, dit is geen paragraaf dus hiervoor moet nog een ander element voor worden gevonden -->
+                <!--     <p>Robert</p>-->
+
+                <!--       Tweede navigatie als je bent ingelogd  -->
+
+                <nav class="popUp">
+
+                    <ol>
+                        <li><a href="/MijnAccount.html">Mijn account</a></li>
+                        <li><a href="/Favorieten.html">Favorieten</a></li>
+                        <li><a href="/Overzichtpagina.html">Uitloggen</a></li>
+                    </ol>
+
+                </nav>
+
+            </nav>
+
+            <a href="/Overzichtpagina-Aangemeld.html" class="backStory">
+     Terug
+      </a>
+
+
+        </nav>
+
+        <h4><img src="/images/titelSportcommentaar.png" alt="Titel: Sportcommentaar"></h4>
+
+    </header>
+
+
+    <button id="buttonSportCBack" class="buttonBlue">Terug</button>
+    <p id="textSportC">
+        Welkom bij sportcommentaar! We gaan een beetje competief aan de gang! Probeer dit verhaal zo snel mogelijk door te lezen. De timer hieronder geeft aan het einde aan wat je tijd is. Als je de high score breekt, win je een gratis verpakking Oreo bij je dichtsbijzijnde Albert Heijn! Succes!
+    </p>
+    <div class="start"></div>
+    <button id="buttonSportCNext" class="buttonBlue">Beginnen</button>
+    <button id="readAgainButtonSport" class="buttonBlue">Opniew lezen</button>
+
+    <p>00:00</p>
+
+    <script src="/js/Sportcommentaar.js"></script>
+</body>
+</html>

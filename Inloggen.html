@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inloggen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+ <header>
+        <!--   Aangezien de 3 links in de bovenste header voor navigatie gebruikt worden worden alle links in het nav element gezet. Vanuit de eerst nav maakt het gebruik van meerdere genest navs en daarin kan weer een geneste nav voorkomen  -->
+        <nav>
+            <nav class="navigationMenuLeft">
+                <!--     H1 staat voor de link van het navigatiemenu, de belangrijkste header voor de gehele website -->
+                <!--    Img staat hierbij omdat dit deel van de heading is -->
+<!--
+                Navigatiemenu
+                <img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+<!--
+Menuvinkje is bij de verhalenwebsite overbodig, omdat er maar 1 pagina voor elke link is
+<img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+ <!--        ol wordt hier gebruikt omdat het menu een structuur heeft en het onlogisch zou zijn om sommige menu items onderaan te plaatsen-->
+                
+                    <ol>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Overzichtpagina.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ol>
+                
+            </nav>
+
+
+            <nav class="hamburgerMenu">
+                <img src="images/Symbolen/HamburgerTransavia.png" alt="Navigatiemenu">
+                
+                <nav class="popUp">
+                    <ol>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Overzichtpagina.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                        <li><a href="Inloggen.html">Inloggen</a></li>
+                    </ol>
+                </nav>
+            </nav>
+
+
+            <a href="Home.html">
+     <img src="images/TransaviaLogo.png" alt="Transavia-logo">
+     </a>
+
+            <a href="Overzichtpagina.html" class="back">
+     Terug
+      </a>
+
+
+        </nav>
+
+
+        <h1>Inloggen</h1>
+
+    </header>
+
+    
+    
+    <main>
+    <form action="Overzichtpagina-Aangemeld.html">
+        <fieldset>
+
+            <legend>Inloggegevens</legend>
+            <!--em gebruik ik voor het sterretje om ernst uit te stralen.-->
+            <label for="name">E-mail of Gebruikersnaam *</label>
+            <input type="text" placeholder="example@gmail.com" id="name" required>
+            
+            
+
+            <label for="passWord">Wachtwoord * </label>
+            <input type="password" id="passWord" required minlength="5">
+            
+            
+
+            <input type="submit" value="Inloggen" name="Submit" id="buttonAccount" class="buttonBlue">
+            <a href="Overzichtpagina-Aangemeld.html"><small>Wachtwoord vergeten?</small></a>
+
+
+        </fieldset>
+    </form>
+
+   <section>
+              
+               <h2>Nog geen account?</h2>
+
+        Maak er nu 1 aan om van de volgende functies gebruik te maken:
+           <ul>
+            <li>Geef likes bij jou favoriete verhalen!</li>
+            <li>Laat comments achter!</li>
+            <li>Voeg verhalen toe aan jouw favorieten!</li>
+            <li>Upload foto's!</li>
+        </ul>
+        
+        <form action="Aanmelden.html">
+            <button class="buttonBlue">Account aanmaken</button>
+       </form>
+        
+   </section>
+      </main>
+      
+
+    
+
+    <!--     <footer>Prototype</footer>-->
+
+    <script src="js/VerhalenSite.js"></script>
+
+</body>
+</html>

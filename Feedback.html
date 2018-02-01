@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!--   Aangezien de 3 links in de bovenste header voor navigatie gebruikt worden worden alle links in het nav element gezet. Vanuit de eerst nav maakt het gebruik van meerdere genest navs en daarin kan weer een geneste nav voorkomen  -->
+        <nav>
+            <nav class="navigationMenuLeft">
+                <!--     H1 staat voor de link van het navigatiemenu, de belangrijkste header voor de gehele website -->
+                <!--    Img staat hierbij omdat dit deel van de heading is -->
+<!--
+                Navigatiemenu
+                <img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+<!--
+Menuvinkje is bij de verhalenwebsite overbodig, omdat er maar 1 pagina voor elke link is
+<img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+ <!--        ol wordt hier gebruikt omdat het menu een structuur heeft en het onlogisch zou zijn om sommige menu items onderaan te plaatsen-->
+                
+                    <ol>
+                        <li><a href="Home-Ingelogd.html">Home</a></li>
+                        <li><a href="Overzichtpagina.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ol>
+                
+            </nav>
+
+
+            <nav class="hamburgerMenu">
+                <img src="images/Symbolen/HamburgerTransavia.png" alt="Navigatiemenu">
+                
+                <nav class="popUp">
+                    <ol>
+                        <li><a href="Home-Ingelogd.html">Home</a></li>
+                        <li><a href="Overzichtpagina-Aangemeld.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                        <li><a href="MijnAccount.html">Mijn account</a></li>
+        <li><a href="Favorieten.html">Favorieten</a></li>
+        <li><a href="Overzichtpagina.html">Uitloggen</a></li>
+                    </ol>
+                </nav>
+            </nav>
+
+
+            <a href="Home-Ingelogd.html">
+     <img src="images/TransaviaLogo.png" alt="Transavia-logo">
+     </a>
+
+            <nav class="loggedIN">
+     <img src="images/Symbolen/ProfielPhotoshopIngekleurd.png" alt="Account-ingelogd-symbool">
+<!--     De gebruikersnaam will ik onder het account plaatje zien, dit is geen paragraaf dus hiervoor moet nog een ander element voor worden gevonden -->
+<!--     <p>Robert</p>-->
+               
+<!--       Tweede navigatie als je bent ingelogd  -->
+        
+        <nav class="popUp">
+        
+        <ol>
+        <li><a href="MijnAccount.html">Mijn account</a></li>
+        <li><a href="Favorieten.html">Favorieten</a></li>
+        <li><a href="Overzichtpagina.html">Uitloggen</a></li>
+        </ol>
+    
+        </nav>
+ 
+     </nav>
+
+
+        </nav>
+
+
+        <h1>Feedback</h1>
+
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Feedback formulier</legend>
+                Vul hieronder het form in over uw probleem!
+                <label for="name">Naam: </label>
+                <input type="text" id="name" value="Robert">
+
+                <label for="subject">Onderwerp:</label>
+                <input type="text" id="subject" minlength="3">
+
+                <label for="subscription">Beschrijving onderwerp</label>
+                <textarea name="subscription" id="subscription" rows="10" minlength="5" required></textarea>
+
+                <!--Ik gebruik hier input type button omdat het formulier zonder action de pagina herlaadt-->
+                <input type="button" value="Verzenden" name="Submit" id="sendFeedback" class="buttonBlue">
+                <!--                <button type="button" id="sendFeedback" class="buttonBlue">Verzenden</button>-->
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Feedback formulier</legend>
+                Vul hieronder het form in over uw probleem!
+                <label for="name2">Naam: </label>
+                <input type="text" id="name2" value="Robert">
+
+                <label for="subject2">Onderwerp:</label>
+                <input type="text" id="subject2" minlength="3">
+
+                <label for="subscription2">Beschrijving onderwerp</label>
+                <textarea name="subscription" id="subscription2" cols="30" rows="10" minlength="5" required></textarea>
+
+                <input type="button" value="Verzenden" name="Submit" id="sendFeedback2" class="buttonBlue">
+                <!--                <button id="sendFeedback" class="buttonBlue">Verzenden</button>-->
+            </fieldset>
+        </form>
+
+        <section class="feedbackForm2">
+            <h2>Gestuurde feedback</h2>
+            <p>
+                <strong>Robert 02-02-2018 schreef:</strong>
+                <i>Kleur</i> Ik vind de kleur van de favorieten knop niet passen bij verhaal moe. Kunnen jullie dit fixen?
+            </p>
+            <p>
+                <strong>Roy 18-05-2017 schreef:</strong>
+                <i>Plaatsing knoppen</i> De plaatsing van de like en favorieten knop staat te dicht op elkaar, wat ervoor zorgt dat ik heel af en toe een verhaal aan mijn favorieten toevoeg. Terwijl ik het alleen een like wil geven. Graag zie ik dit verbeterd!
+            </p>
+        </section>
+    </main>
+
+    <script src="js/Feedback.js"></script>
+</body>
+
+</html>

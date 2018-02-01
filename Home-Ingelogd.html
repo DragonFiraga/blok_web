@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!--   Aangezien de 3 links in de bovenste header voor navigatie gebruikt worden worden alle links in het nav element gezet. Vanuit de eerst nav maakt het gebruik van meerdere genest navs en daarin kan weer een geneste nav voorkomen  -->
+        <nav>
+            <nav class="navigationMenuLeft">
+                <!--     H1 staat voor de link van het navigatiemenu, de belangrijkste header voor de gehele website -->
+                <!--    Img staat hierbij omdat dit deel van de heading is -->
+<!--
+                Navigatiemenu
+                <img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+<!--
+Menuvinkje is bij de verhalenwebsite overbodig, omdat er maar 1 pagina voor elke link is
+<img src="images/Symbolen/Menu%20vinkjeldpi.png" alt="Menuvinkje">
+-->
+ <!--        ol wordt hier gebruikt omdat het menu een structuur heeft en het onlogisch zou zijn om sommige menu items onderaan te plaatsen-->
+                
+                    <ol>
+                        <li><a href="Home-Ingelogd.html">Home</a></li>
+                        <li><a href="Overzichtpagina-Aangemeld.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ol>
+                
+            </nav>
+
+
+            <nav class="hamburgerMenu">
+                <img src="images/Symbolen/HamburgerTransavia.png" alt="Navigatiemenu">
+                
+                <nav class="popUp">
+                    <ol>
+                        <li><a href="Home-Ingelogd.html">Home</a></li>
+                        <li><a href="Overzichtpagina-Aangemeld.html">Verhalen</a></li>
+                        <li><a href="https://www.transavia.com/nl-NL/home/">Transavia</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                        <li><a href="MijnAccount.html">Mijn account</a></li>
+        <li><a href="Favorieten.html">Favorieten</a></li>
+        <li><a href="Home.html">Uitloggen</a></li>
+                    </ol>
+                </nav>
+            </nav>
+
+
+            <a href="Home-Ingelogd.html">
+     <img src="images/TransaviaLogo.png" alt="Transavia-logo">
+     </a>
+
+            <nav class="loggedIN">
+     <img src="images/Symbolen/ProfielPhotoshopIngekleurd.png" alt="Account-ingelogd-symbool">
+<!--     De gebruikersnaam will ik onder het account plaatje zien, dit is geen paragraaf dus hiervoor moet nog een ander element voor worden gevonden -->
+<!--     <p>Robert</p>-->
+               
+<!--       Tweede navigatie als je bent ingelogd  -->
+        
+        <nav class="popUp">
+        
+        <ol>
+        <li><a href="MijnAccount.html">Mijn account</a></li>
+        <li><a href="Favorieten.html">Favorieten</a></li>
+        <li><a href="Home.html">Uitloggen</a></li>
+        </ol>
+    
+        </nav>
+ 
+     </nav>
+
+        </nav>
+
+
+        <h1>Home</h1>
+
+    </header>
+
+    <h2><button class="suitCaseSide">Aanbevolen <img src="images/openCloseSuitCase.png" alt="Open of dicht vinkje"></button></h2>
+
+
+    <ul class="suitCase">
+        <li>
+            <article>
+                <a href="story's/Moe.html">
+
+                           <img src="images/MoeVoorbeeld.jpg" class="storyPicture" alt="Link verhaal moe">
+                                                     <div>
+                                                          <h3>Moe</h3>
+<!--    Via child elementen wil ik de figures later goed positioneren. -->
+<!--    De iconen van het aantal likes en de leestijd visualiseren beiden goed wat er daarnaast mee bedoeld word.  -->
+<!--    Er wordt gebruikt gemaakt van dl, dt en dd elementen om een lijst extra informatie waarop gezocht kan worden weergeven -->
+                        <dl>
+                           <dt><img src="images/Symbolen/Likev2ldpi.png" alt="Aantal likes"></dt>
+                               <dd>2 miljoen</dd>
+                               
+                            <dt><img src="images/Symbolen/RTv2ldpi.png" alt="Leestijd"> </dt>
+                               <dd>3 minuten</dd>
+                       </dl>
+            
+                          </div>
+                           </a>
+
+            </article>
+
+
+        </li>
+        <li>
+            <article>
+                <a href="story's/Sportcommentaar.html" class="story">
+                            <img src="images/Picture_Sportcommentaar.jpg" class="storyPicture" alt="Link verhaal sportcommentaar">
+                            <div>
+                            <h3>Sportcommentaar</h3>
+                       <dl>
+                           <dt><img src="images/Symbolen/Likev2ldpi.png" alt="Aantal likes"></dt>
+                               <dd>200.000</dd>
+                               
+                            <dt><img src="images/Symbolen/RTv2ldpi.png" alt="Leestijd"> </dt>
+                               <dd>2 minuten</dd>
+                       </dl>
+                       </div> 
+                       
+                        </a>
+            </article>
+
+        </li>
+        <li>
+            <article>
+                <a href="story's/Verrassing.html">
+                            <img src="images/Picture_Verrassing.jpg" class="storyPicture" alt="Link verhaal verrassing">
+                            <div>
+                            <h3>Verrassing</h3>
+
+                        <dl>
+                           <dt><img src="images/Symbolen/Likev2ldpi.png" alt="Aantal likes"></dt>
+                               <dd>2000</dd>
+                               
+                            <dt><img src="images/Symbolen/RTv2ldpi.png" alt="Leestijd"> </dt>
+                               <dd>10 minuten</dd>
+                       </dl>
+                       </div> 
+                        </a>
+            </article>
+
+        </li>
+
+
+    </ul>
+
+    <script src="js/Home.js"></script>
+</body>
+
+</html>
