@@ -501,7 +501,7 @@ form {
 
 h1 {
     color: #0ed173;
-    font-size: 3.4em;
+    font-size: 3.6em;
     margin: 0.2em 0.1em 0.2em 0.1em;
     text-align: center;
 }
@@ -779,17 +779,24 @@ textarea {
 /* Om het navigatiemenu klikbaar over te laten komen maak ik hier gebruik van 3 states. De eerste 2 wijzen naar de tekst zelf, en de 3 verschuift de link iets naar onder om het gevoel van een knop na te boosten. */
 /*Verhalen*/
 
-body.bgStep1 > h4,                        /* Exclusief voor verhaal moe */
-body.bgStep2 > h4,
-body.bgStep3 > h4,
-body.bgStep4 > h4 {
+body.bgStep1 header > h4,
+body.bgStep2 header > h4,
+body.bgStep3 header > h4,
+body.bgStep4 header > h4{               /* Exclusief voor verhaal moe */
     color: white;
-    font-size: 3.38em;
+    font-size: 3.6em;
     position: relative;
     left: 10%;
-    margin: 2em 0 0.5em 0;
+    margin: 2em 0 0 0;
     transform: rotate(-1.5deg);
     width: auto;
+}
+
+body.bgStep1 header,
+body.bgStep2 header,
+body.bgStep3 header,
+body.bgStep4 header{
+    margin-bottom: 2em;
 }
 
 body.bgStep1 {
@@ -913,11 +920,11 @@ body.bgSportC header h4 img {
 }
 
 p.textSportCStart {
-    margin-left: 24.5%;
+    margin-left: 30%;
 }
 
 #buttonSportCBack {
-    margin-left: 5.5%;
+    margin-left: 4%;
 }
 
 #readAgainButtonSport + p {
@@ -1145,6 +1152,13 @@ li > article {
     section {
         margin-left: 1em;
     }
+    
+    #buttonSportCBack,
+    #buttonSportCNext,
+    #readAgainButtonSport{
+        font-size: 0.75em;
+        width: 8em;
+    }
 
 }
 
@@ -1222,7 +1236,7 @@ li > article {
     }
 
     #buttonSportCBack {
-        margin-left: 18%;
+        margin-left: 16.2%;
     }
 /*    Verrassing */
         body.bgVerrassing > img{
@@ -1244,6 +1258,21 @@ li > article {
 
 @media (min-width: 58.25em) {        /*Overgang verhalen overzichtpagina*/
 
+    h1 {
+        font-size: 7.5em;
+    }
+    
+    h2 > button {
+        top: 12em;
+        margin-left: 10%;
+        width: 80.1%;
+    }
+
+    button.suitCase2 {
+        padding-top: 19.50em;
+        transition: 0.8s;
+    }
+    
     div {
         top: 13.65em;
         width: 25.07em;
